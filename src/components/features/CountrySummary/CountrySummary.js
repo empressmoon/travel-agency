@@ -41,7 +41,6 @@ const CountrySummary = ({alpha3Code, name, flag, trips, region, subregion, langu
       </DetailsBox>
     </Link>
   </Col>
-
 );
 
 CountrySummary.propTypes = {

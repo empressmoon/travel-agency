@@ -9,7 +9,7 @@ const  OrderForm = props => (
   <Row>
     {pricing.map(pricingData => (
       <Col md={4} key={pricingData.id}>
-        <OrderOption {...pricingData} currentValue={props.options[pricingData.id]} setOrderOption={props.setOrderOption}/>
+        <OrderOption {...pricingData} currentValue={props.options[pricingData.id]} setOrderOption={props.setOrderOption} />
       </Col>
     ))}
     <Col xs={12}>
