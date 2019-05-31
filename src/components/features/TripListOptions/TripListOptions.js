@@ -24,6 +24,7 @@ class TripListOptions extends React.Component {
   }
 
   handleSearch(phrase){
+    console.log(phrase);
     this.props.changeSearchPhrase(phrase);
   }
 

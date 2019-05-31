@@ -20,10 +20,10 @@
 .icon {
   cursor: pointer;
   width: 80%;
-  padding: ($base-size / 2);
+  display: flex;
 
   i {
-    padding-right: ($base-size / 2);
+    padding: 0 ($base-size);
   }
 
   &Active {
