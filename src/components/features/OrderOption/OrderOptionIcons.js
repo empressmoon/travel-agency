@@ -6,7 +6,6 @@ import styles from './OrderOption.scss';
 import Icon from '../../common/Icon/Icon';
 
 const  OrderOptionIcons = ({values, setOptionValue, required, currentValue}) => (
-  console.log('currentValue', currentValue),
   <div className={styles.icon}>
     {required ? '' : (
       <div className={styles.icon} setOptionValue=''><Icon name={'times-circle'}>none</Icon></div>
