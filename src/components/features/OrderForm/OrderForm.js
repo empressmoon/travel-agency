@@ -49,7 +49,7 @@ const  OrderForm = props => (
     <Col xs={12}>
       <OrderSummary tripCost={props.tripCost} options={props.options} />
     </Col>
-    <Button disabled={!props.options.name.lenth >0 && !props.options.contact.length > 0} onClick={() => sendOrder(props.options, props.tripCost, props.tripName, props.tripId, props.tripCountry)}>Order now!</Button>
+    <Button disabled={!(props.options.name.length > 0 && props.options.contact.length > 0)} onClick={() => sendOrder(props.options, props.tripCost, props.tripName, props.tripId, props.tripCountry)}>Order now!</Button>
   </Row>
 );
 
