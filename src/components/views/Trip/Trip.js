@@ -15,7 +15,7 @@ import OrderForm from '../../features/OrderForm/OrderFormContainer';
 import styles from './Trip.scss';
 import {Grid, Row, Col} from 'react-flexbox-grid';
 
-const Trip = ({error, name, image, cost, days, description, country, intro}) => {
+const Trip = ({error, name, image, cost, days, description, country, intro, id}) => {
   if(error) return <NotFound />;
   else return (
     <Section>
@@ -45,7 +45,7 @@ const Trip = ({error, name, image, cost, days, description, country, intro}) => 
           <Col xs={12}>
             <PageTitle text='Trip details' />
             {HTMLParser(description)}
-            <OrderForm tripCost={cost} />
+            <OrderForm tripCost={cost} tripName={name} tripCountry={country.name} tripId={id}/>
           </Col>
         </Row>
       </Grid>
