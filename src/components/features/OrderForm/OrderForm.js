@@ -46,7 +46,7 @@ const  OrderForm = props => (
     <Col xs={12}>
       <OrderSummary tripCost={props.tripCost} options={props.options} />
     </Col>
-    <Button onClick={() => sendOrder(options, tripCost)}>Order now!</Button>
+    <Button onClick={() => sendOrder(props.options, props.tripCost)}>Order now!</Button>
   </Row>
 );
 
