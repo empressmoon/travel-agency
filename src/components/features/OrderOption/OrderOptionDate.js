@@ -21,7 +21,7 @@ class OrderOptionDate extends React.Component {
     this.setState({
       startDate: date,
     });
-    this.props.setOptionValue(date.toISOString().slice(0, 10));
+    this.props.setOptionValue(date);
   }
 
   render() {

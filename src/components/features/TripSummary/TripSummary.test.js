@@ -10,7 +10,7 @@ describe('Component TripSummary', () => {
     const component = shallow(<TripSummary id={id} />);
 
     expect(component.find(Link).prop('to')).toEqual(expectedLink);
-    console.log(component.debug());
+    //console.log(component.debug());
   });
 
   it('should render correct image', () => {
@@ -56,7 +56,7 @@ describe('Component TripSummary', () => {
     const expectedTags = ['tag1', 'tag2', 'tag3'];
     const component = shallow(<TripSummary tags={expectedTags} />);
     const renderedTags = component.find('.tags');
-    
+
     expect(renderedTags).toBeTruthy();
   });
 
